@@ -3,7 +3,7 @@ import './FormInput.styles.scss';
 
 const FormInput = ( {handleChange, label, ...otherProps }) => {
     return (
-        <div>
+        <div className="group">
             <input
                 className="form-input"
                 onChange={handleChange}
