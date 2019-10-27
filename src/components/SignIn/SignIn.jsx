@@ -31,10 +31,11 @@ class SignIn extends React.Component {
                 <span>Sign in with your email and password</span>
 
                 <form onSubmit={this.handleSubmit}>
+                    <label>Email</label>
                     <input 
                         name="email" type="email" onChange={this.handleChange} value={this.state.email} required 
                     />
-                    <label>Email</label>
+                    <label>Password</label>
                     <input 
                         name="password" 
                         type="password" 
@@ -42,7 +43,6 @@ class SignIn extends React.Component {
                         onChange={this.handleChange} 
                         required 
                     />
-                    <label>Password</label>
 
                     <input type="submit" value="Submit Form" />
                 </form>
